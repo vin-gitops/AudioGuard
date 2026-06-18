@@ -109,16 +109,16 @@ This is the exact signal structure the AudioGuard Sanitizer targets. Any energy 
 ┌─────────────────────────────────────────────────────────────┐
 │                    TRUSTED PERIMETER                        │
 │                                                             │
-│   ┌──────────┐    ┌──────────┐    ┌───────────────────┐    │
+│   ┌──────────┐    ┌──────────┐     ┌───────────────────┐    │
 │   │  Audio   │───▶│  Filter  │───▶│  AudioGuard HSM   │    │
-│   │   ADC    │    │  Bank    │    │  (DSM + RoT +     │    │
-│   └──────────┘    │ (FIR/IIR)│    │   Sanitizer)      │    │
-│                   └──────────┘    └─────────┬─────────┘    │
-│                        ▲                    │              │
-│                        │ ← ATTACK SURFACE   │              │
-│                   Coefficient               ▼              │
-│                   Registers            Clean DAC           │
-│                   (tamper              Output              │
+│   │   ADC    │    │  Bank    │     │  (DSM + RoT +     │    │
+│   └──────────┘    │ (FIR/IIR)│     │   Sanitizer)      │    │
+│                   └──────────┘     └─────────┬─────────┘    │
+│                        ▲                    │               │
+│                        │ ← ATTACK SURFACE   │               │
+│                   Coefficient               ▼               │
+│                   Registers            Clean DAC            │ 
+│                   (tamper              Output               │
 │                    target)                                  │
 └─────────────────────────────────────────────────────────────┘
 
