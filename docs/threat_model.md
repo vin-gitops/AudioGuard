@@ -2,7 +2,7 @@
 **Version:** 1.0  
 **Date:** 2026-06-10  
 **Author:** Vidisha  
-**Project:** AudioGuard IP Core — Hardware Security Module  
+**Project:** AudioGuard IP Core — Hardware Security Module   
 **Reference:** Guri, Solewicz, Daidakulov, Elovici — *MOSQUITO: Covert Ultrasonic Transmissions between Two Air-Gapped Computers using Speaker-to-Speaker Communication*, IEEE DSC 2018. [arXiv:1803.03422](https://arxiv.org/abs/1803.03422)
 
 ---
